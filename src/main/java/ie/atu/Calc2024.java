@@ -15,6 +15,7 @@ public class Calc2024 {
             case "add": add(a, b); break;
             case "multiply": multiply(a, b); break;
             case "divide" : divide(a, b); break;
+            case "subtract" : subtract(a, b); break;
         }
     }
     public static void add(int a, int b) {
@@ -28,5 +29,9 @@ public class Calc2024 {
     public static void divide(int a, int b){
         int division = a / b;
         System.out.println("The sum is: " + division);
+    }
+    public static void subtract(int a, int b){
+        int minus = a - b;
+        System.out.println("The sum is: " + minus);
     }
 }
