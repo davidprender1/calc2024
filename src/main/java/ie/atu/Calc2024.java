@@ -13,10 +13,15 @@ public class Calc2024 {
         String op = sc.next();
         switch (op){
             case "add": add(a, b); break;
+            case "subtract": multiply(a, b); break;
         }
     }
     public static void add(int a, int b) {
        int sum = a + b;
        System.out.println("The sum is: " + sum);
+    }
+    public static void multiply(int a, int b){
+        int product = a * b;
+        System.out.println("The sum is: " + product);
     }
 }
