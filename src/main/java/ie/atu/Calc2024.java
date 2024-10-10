@@ -16,6 +16,7 @@ public class Calc2024 {
             case "multiply": multiply(a, b); break;
             case "divide" : divide(a, b); break;
             case "subtract" : subtract(a, b); break;
+            case "exponent": exponential(a, b); break;
         }
     }
     public static void add(int a, int b) {
@@ -33,5 +34,9 @@ public class Calc2024 {
     public static void subtract(int a, int b){
         int minus = a - b;
         System.out.println("The sum is: " + minus);
+    }
+    public static void exponential(int a, int b) {
+        int expon = (int) Math.pow(a, b);
+        System.out.println("The result of raising " + a + " to the power of " + b + " is: " + expon);
     }
 }
